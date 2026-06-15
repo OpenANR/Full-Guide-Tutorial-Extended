@@ -9,10 +9,10 @@ Berikut langkah-langkah menginstall PHP di Arch Linux:
 
 1. Pertama, install paket PHP dengan mengetikkan perintah berikut :
 
-```bash
-sudo pacman -S php php-gd
-```
-_**Catatan :** Secara bawaan, versi PHP yang terinstall di Arch Linux adalah versi terbaru. Versi PHP terbaru saat ini adalah 8.5_
+    ```bash
+    sudo pacman -S php php-gd
+    ```
+    _**Catatan :** Secara bawaan, versi PHP yang terinstall di Arch Linux adalah versi terbaru. Versi PHP terbaru saat ini adalah 8.5_
 
 ## Konfigurasi PHP
 
@@ -22,9 +22,9 @@ Berikut adalah langkah-langkah untuk mengkonfigurasi PHP:
 
 1. Pertama, buka file konfigurasi PHP dengan menggunakan editor nano:
 
-```bash
-sudo nano /etc/php/php.ini
-```
+    ```bash
+    sudo nano /etc/php/php.ini
+    ```
 
 2. Setelah file terbuka, cari baris `extension` kemudian hapus tanda `;` yang ada di depannya agar extension aktif. Berikut saran extension yang perlu diaktifkan:
     - `extension=bcmath` (Penting untuk kalkulasi presisi tinggi)

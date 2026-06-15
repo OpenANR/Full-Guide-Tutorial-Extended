@@ -10,9 +10,9 @@ Berikut adalah langkah-langkah untuk menginstall MariaDB di Arch Linux :
 1. Pertama, pastikan ekstensi yang dibutuhkan oleh MariaDB sudah aktif di PHP :
 2. Kemudian install paket MariaDB dengan mengetikkan perintah berikut :
 
-```bash
-sudo pacman -S mariadb
-```
+    ```bash
+    sudo pacman -S mariadb
+    ```
 ## Konfigurasi MariaDB
 
 ### 1. Setup Direktori Data MariaDB
@@ -21,29 +21,33 @@ Setelah instalasi berhasil, langkah selanjutnya adalah melakukan konfigurasi Mar
 
 1. Inisialisasi direktori data MariaDB untuk menginstall database:
 
-```bash
-sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-```
+    ```bash
+    sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+    ```
+
 2. Setelah berhasil, aktifkan dan jalankan layanan MariaDB:
 
-```bash
-sudo systemctl enable --now mariadb
-```
+    ```bash
+    sudo systemctl enable --now mariadb
+    ```
+
 3. Cek status layanan MariaDB:
 
-```bash
-sudo systemctl status mariadb
-```
-Jika statusnya `active (running)` berarti berhasil seperti contoh gambar di bawah ini:
+    ```bash
+    sudo systemctl status mariadb
+    ```
 
-![Status layanan MariaDB](images/mariadb_status.png)
+    Jika statusnya `active (running)` berarti berhasil seperti contoh gambar di bawah ini:
+
+    ![Status layanan MariaDB](images/mariadb_status.png)
 
 4. Amankan instalasi MariaDB, jika service sudah berhasil berjalan, jalankan skrip keamanan bawaan untuk mengatur password root database:
 
-```bash
-sudo mysql_secure_installation
-```
-_**Catatan :** Penjelasan lengkap mengenai skrip `sudo mysql_secure_installation` ada pada sub bab di bawah ini._
+    ```bash
+    sudo mysql_secure_installation
+    ```
+
+    _**Catatan :** Penjelasan lengkap mengenai skrip `sudo mysql_secure_installation` ada pada sub bab di bawah ini._
 
 ### 2. Konfigurasi `mysql_secure_installation`
 
@@ -82,27 +86,39 @@ Jika Anda tidak ingin menggunakan user `root` untuk mengakses database (karena a
 
 Berikut langkah-langkahnya:
 1. Login ke MariaDB sebagai root:
-```bash
-sudo mariadb
-```
+
+    ```bash
+    sudo mariadb
+    ```
+
 2. Buat user baru:
-```sql
-CREATE USER 'nama_user'@'localhost' IDENTIFIED BY 'password';
-```
+
+    ```sql
+    CREATE USER 'nama_user'@'localhost' IDENTIFIED BY 'password';
+    ```
+
 3. Berikan hak akses ke user baru:
-```sql
-GRANT ALL PRIVILEGES ON *.* TO 'nama_user'@'localhost' WITH GRANT OPTION;
-```
+
+    ```sql
+    GRANT ALL PRIVILEGES ON *.* TO 'nama_user'@'localhost' WITH GRANT OPTION;
+    ```
+
 4. Simpan perubahan hak akses:
-```sql
-FLUSH PRIVILEGES;
-```
+
+    ```sql
+    FLUSH PRIVILEGES;
+    ```
+
 5. Keluar dari MariaDB:
-```sql
-EXIT;
-```
+
+    ```sql
+    EXIT;
+    ```
+
 6. Coba login menggunakan user yang baru dibuat:
-```bash
-mariadb -u nama_user -p
-```
-_(Tekan Enter, lalu ketikkan password yang baru saja Anda buat)._
+
+    ```bash
+    mariadb -u nama_user -p
+    ```
+
+    _(Tekan Enter, lalu ketikkan password yang baru saja Anda buat)._
