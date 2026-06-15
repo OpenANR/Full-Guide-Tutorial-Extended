@@ -20,11 +20,12 @@ Setelah instalasi berhasil, sebaiknya kita melakukan konfigurasi PHP agar ngodin
 
 Berikut adalah langkah-langkah untuk mengkonfigurasi PHP:
 
-1. Petama, buka file konfigurasi PHP dengan menggunakan editor nano:
+1. Pertama, buka file konfigurasi PHP dengan menggunakan editor nano:
 
 ```bash
 sudo nano /etc/php/php.ini
 ```
+
 2. Setelah file terbuka, cari baris `extension` kemudian hapus tanda `;` yang ada di depannya agar extension aktif. Berikut saran extension yang perlu diaktifkan:
     - `extension=bcmath` (Penting untuk kalkulasi presisi tinggi)
     - `extension=intl` (Diperlukan oleh Laravel untuk lokalisasi dan format waktu)
