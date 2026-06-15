@@ -1,0 +1,80 @@
+site_name: FGT Docs
+theme:
+  name: material
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  language: id
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+    - search.share
+    - navigation.path
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+
+extra:
+  social:
+      - icon: fontawesome/brands/facebook
+        link: https://www.facebook.com/nuzulul.puspa.5
+
+      - icon: fontawesome/brands/instagram
+        link: https://www.instagram.com/massnuzul_06
+
+      - icon: fontawesome/brands/github
+        link: https://github.com/OpenANR
+
+copyright: Copyright &copy; 2026 OpenANR
+
+extra_css:
+  - stylesheets/custom.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js
+  - javascripts/init_highlight.js
+
+markdown_extensions:
+  - fenced_code
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Pengelola Arsip File:
+    - Pengenalan: pengelola-arsip-fle/index.md
+    - Perintah TAR: pengelola-arsip-fle/perintah-tar.md
+  - Konfigurasi Web Server:
+    - Pengantar: konfigurasi-web-server/index.md
+    - Arch Linux:
+      - Panduan Arch Linux: konfigurasi-web-server/arch-linux/index.md
+      - Install MariaDB: konfigurasi-web-server/arch-linux/install-mariadb.md
+      - Install PHP: konfigurasi-web-server/arch-linux/install-php.md
+      - Install phpMyAdmin: konfigurasi-web-server/arch-linux/install-phpmyadmin.md

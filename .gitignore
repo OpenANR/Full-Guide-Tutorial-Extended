@@ -1,0 +1,11 @@
+# MkDocs build output
+site/
+
+# Temporary logs
+error.txt
+
+# Editor / OS files
+.DS_Store
+.vscode/
+.idea/
+*.log

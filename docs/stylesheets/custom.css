@@ -1,0 +1,112 @@
+/* Custom Styles for FGT Docs */
+
+/* --- INLINE CODE STYLING --- */
+/* Light Mode (Default) inline code */
+.md-typeset :not(pre) > code {
+    color: #e83e8c; /* Vibrant pink/rose color */
+    background-color: rgba(232, 62, 140, 0.06); /* Soft pink background */
+    padding: 0.18em 0.35em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    border: 1px solid rgba(232, 62, 140, 0.12);
+    word-wrap: break-word;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    font-family: var(--md-code-font-family, JetBrains Mono), monospace;
+}
+
+/* Dark Mode (Slate) inline code */
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+    color: #f472b6; /* Lighter pink/rose for excellent readability */
+    background-color: rgba(244, 114, 182, 0.1); /* Soft dark-mode pink background */
+    border-color: rgba(244, 114, 182, 0.2);
+}
+
+/* --- CODE BLOCK SYNTAX HIGHLIGHTING (highlight.js) --- */
+/* Custom highlight.js styling integrated with Material theme */
+
+/* Light Mode Highlight.js colors */
+.hljs-comment,
+.hljs-quote {
+    color: #94a3b8; /* Muted gray for comments */
+    font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #4f46e5; /* Indigo/purple for keywords like sudo, pacman, systemctl */
+    font-weight: 600;
+}
+.hljs-string,
+.hljs-doctag,
+.hljs-regexp,
+.hljs-meta .hljs-string {
+    color: #0d9488; /* Teal for strings */
+}
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: #ea580c; /* Amber/Orange for numbers and variables */
+}
+.hljs-title,
+.hljs-section,
+.hljs-selector-id,
+.hljs-title.class_,
+.hljs-title.function_ {
+    color: #b91c1c; /* Crimson red for titles and functions */
+    font-weight: 600;
+}
+.hljs-params,
+.hljs-type,
+.hljs-built_in {
+    color: #7c3aed; /* Purple for built-ins */
+}
+.hljs-attr {
+    color: #2563eb; /* Blue for attributes */
+}
+.hljs-meta {
+    color: #64748b; /* Gray for metadata */
+}
+
+/* Dark Mode Highlight.js colors */
+[data-md-color-scheme="slate"] .hljs-comment,
+[data-md-color-scheme="slate"] .hljs-quote {
+    color: #64748b;
+}
+[data-md-color-scheme="slate"] .hljs-keyword,
+[data-md-color-scheme="slate"] .hljs-selector-tag,
+[data-md-color-scheme="slate"] .hljs-subst {
+    color: #818cf8; /* Light indigo for keywords in dark mode */
+}
+[data-md-color-scheme="slate"] .hljs-string,
+[data-md-color-scheme="slate"] .hljs-doctag,
+[data-md-color-scheme="slate"] .hljs-regexp,
+[data-md-color-scheme="slate"] .hljs-meta .hljs-string {
+    color: #2dd4bf; /* Vibrant teal */
+}
+[data-md-color-scheme="slate"] .hljs-number,
+[data-md-color-scheme="slate"] .hljs-literal,
+[data-md-color-scheme="slate"] .hljs-variable,
+[data-md-color-scheme="slate"] .hljs-template-variable,
+[data-md-color-scheme="slate"] .hljs-tag .hljs-attr {
+    color: #fbbf24; /* Amber yellow */
+}
+[data-md-color-scheme="slate"] .hljs-title,
+[data-md-color-scheme="slate"] .hljs-section,
+[data-md-color-scheme="slate"] .hljs-selector-id,
+[data-md-color-scheme="slate"] .hljs-title.class_,
+[data-md-color-scheme="slate"] .hljs-title.function_ {
+    color: #f87171; /* Bright red */
+}
+[data-md-color-scheme="slate"] .hljs-params,
+[data-md-color-scheme="slate"] .hljs-type,
+[data-md-color-scheme="slate"] .hljs-built_in {
+    color: #a78bfa; /* Lavender purple */
+}
+[data-md-color-scheme="slate"] .hljs-attr {
+    color: #60a5fa; /* Light blue */
+}
+[data-md-color-scheme="slate"] .hljs-meta {
+    color: #94a3b8;
+}
