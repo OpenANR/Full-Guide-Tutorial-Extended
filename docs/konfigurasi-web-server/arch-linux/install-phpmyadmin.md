@@ -116,6 +116,7 @@ Setelah konfigurasi selesai, Anda dapat mengakses **phpMyAdmin** dengan mengetik
     ```
     http://localhost:8080
     ```
+
 3. Login menggunakan username dan password **MariaDB** yang sudah Anda buat sebelumnya. Contohnya seperti pada gambar di bawah ini:
 
     ![Login phpMyAdmin](images/login_phpmyadmin.png)

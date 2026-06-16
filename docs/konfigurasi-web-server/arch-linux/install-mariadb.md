@@ -13,6 +13,7 @@ Berikut adalah langkah-langkah untuk menginstall MariaDB di Arch Linux :
     ```bash
     sudo pacman -S mariadb
     ```
+
 ## Konfigurasi MariaDB
 
 ### 1. Setup Direktori Data MariaDB
@@ -85,6 +86,7 @@ Berikut adalah penjelasan lengkap mengenai skrip `sudo mysql_secure_installation
 Jika Anda tidak ingin menggunakan user `root` untuk mengakses database (karena alasan keamanan), Anda bisa membuat user baru dengan hak akses seluruh isi database. 
 
 Berikut langkah-langkahnya:
+
 1. Login ke MariaDB sebagai root:
 
     ```bash

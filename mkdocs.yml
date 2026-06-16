@@ -62,7 +62,7 @@ extra_javascript:
   - javascripts/init_highlight.js
 
 markdown_extensions:
-  - fenced_code
+  - pymdownx.superfences
   - toc:
       permalink: true
 
