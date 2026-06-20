@@ -40,6 +40,8 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.indexes
+  
+  # logo: logo/fgt_logo.svg
 
 extra:
   social:
@@ -68,13 +70,20 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Pengelola Arsip File:
-    - Pengenalan: pengelola-arsip-fle/index.md
-    - Perintah TAR: pengelola-arsip-fle/perintah-tar.md
-  - Konfigurasi Web Server:
-    - Pengantar: konfigurasi-web-server/index.md
-    - Arch Linux:
-      - Panduan Arch Linux: konfigurasi-web-server/arch-linux/index.md
-      - Install MariaDB: konfigurasi-web-server/arch-linux/install-mariadb.md
-      - Install PHP: konfigurasi-web-server/arch-linux/install-php.md
-      - Install phpMyAdmin: konfigurasi-web-server/arch-linux/install-phpmyadmin.md
+  - Windows: Windows/index.md
+  - Linux:
+    - Pengenalan: Linux/index.md
+    - Pengelola Arsip File:
+      - Pengenalan: Linux/pengelola-arsip-file/index.md
+      - Perintah TAR: Linux/pengelola-arsip-file/perintah-tar.md
+      - Perintah ZIP dan UNZIP: Linux/pengelola-arsip-file/perintah-zip-unzip.md
+    - Mengelola Perizinan Folder:
+      - Pengenalan: Linux/mengelola-perizinanan-folder/index.md
+      - Pengguaan Chmod dan Chown: Linux/mengelola-perizinanan-folder/penggunaan-chown-dan-chmod.md
+    - Konfigurasi Web Server:
+      - Pengantar: Linux/konfigurasi-web-server/index.md
+      - Arch Linux:
+        - Panduan Arch Linux: Linux/konfigurasi-web-server/arch-linux/index.md
+        - Install MariaDB: Linux/konfigurasi-web-server/arch-linux/install-mariadb.md
+        - Install PHP: Linux/konfigurasi-web-server/arch-linux/install-php.md
+        - Install phpMyAdmin: Linux/konfigurasi-web-server/arch-linux/install-phpmyadmin.md

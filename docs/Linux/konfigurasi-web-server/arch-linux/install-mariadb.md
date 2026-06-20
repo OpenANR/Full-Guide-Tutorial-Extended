@@ -1,5 +1,7 @@
 # CARA INSTALL MARIADB DI ARCH LINUX
-_By : Ahmad Nuzulur Rozaq + Gemini AI_
+_By : Ahmad Nuzulur Rozaq + Gemini AI + Deepseek AI_
+
+![Cara Install MariaDB di Arch Linux](images/install_mariadb.jpg)
 
 **MariaDB** adalah sistem manajemen basis data relasional (RDBMS) yang bersifat open-source dan sangat populer.
 
@@ -25,6 +27,15 @@ Setelah instalasi berhasil, langkah selanjutnya adalah melakukan konfigurasi Mar
     ```bash
     sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
     ```
+    _Penjelasan:_
+
+    | **Perintah**               | **Fungsi**                                                                                                          |
+    |----------------------------|---------------------------------------------------------------------------------------------------------------------|
+    | `sudo`                     | Menjalankan perintah dengan hak akses root.                                                                         |
+    | `mysql_install_db`         | Membuat struktur tabel sistem yang diperlukan agar database bisa berjalan.                                          |
+    | `--user=mysql`             | Menentukan bahwa proses pembuatan database akan dijalankan dengan hak akses milik user sistem yang bernama `mysql`. |
+    | `--basedir=/usr`           | Menentukan direktori dasar tempat file biner (executable) MySQL/MariaDB berada.                                     |
+    | `--datadir=/var/lib/mysql` | Menentukan direktori data (tempat penyimpanan file-file database) Anda.                                             |
 
 2. Setelah berhasil, aktifkan dan jalankan layanan MariaDB:
 

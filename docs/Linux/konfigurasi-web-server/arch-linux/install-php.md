@@ -1,6 +1,8 @@
 # CARA INSTALL PHP DI ARCH LINUX
 _By : Ahmad Nuzulur Rozaq + Gemini AI_
 
+![Cara Install PHP di Arch Linux](images/install_php.jpg)
+
 **PHP** adalah bahasa pemrograman sisi server yang digunakan untuk pengembangan web. Berikut adalah langkah-langkah untuk menginstall PHP di Arch Linux:
 
 ## Install Paket PHP

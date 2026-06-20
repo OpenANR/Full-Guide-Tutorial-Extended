@@ -1,6 +1,8 @@
 # Panduan Web Server di Arch Linux
 _Langkah-langkah setup lingkungan pengembangan web di sistem Arch Linux._
 
+![Panduan Web Server di Arch Linux](images/setup_web_server_archlinux.jpg)
+
 Bagian ini menyediakan tutorial terperinci tentang cara menginstal dan mengkonfigurasi komponen web server stack di distribusi Arch Linux secara mandiri.
 
 ## Langkah Setup Web Server

@@ -1,5 +1,8 @@
 # PERINTAH TAR DAN FUNGSINYA
+
 _By : Ahmad Nuzulur Rozaq + Gemini AI_
+
+![Pengelola TAR dan Fungsinya](images/perintah_tar_dan_fungsinya.jpg)
 
 Perintah `tar` (singkatan dari _Tape Archive_) adalah salah satu utilitas paling penting dan sering digunakan di Linux. Fungsinya adalah untuk menggabungkan banyak file atau direktori menjadi satu file arsip (sering disebut tarball), serta untuk mengompres atau mengekstraknya.
 

@@ -1,6 +1,8 @@
 # CARA INSTALL PHPMYADMIN DI ARCH LINUX
 _By : Ahmad Nuzulur Rozaq + Gemini AI_
 
+![Cara Install PHP di Arch Linux](images/install_phpmyadmin.jpg)
+
 **phpMyAdmin** merupakan aplikasi web berbasis PHP yang digunakan untuk mengelola basis data MySQL atau MariaDB. **phpMyAdmin** biasanya digunakan untuk membantu para pengembang web dalam mengelola basis data MySQL atau MariaDB.
 
 ## Install Paket phpMyAdmin

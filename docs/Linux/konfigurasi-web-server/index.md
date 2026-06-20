@@ -1,6 +1,8 @@
 # Konfigurasi Web Server
 _Panduan lengkap instalasi dan konfigurasi lingkungan Web Server._
 
+![Konfigurasi Web Server](images/konfigurasi_web_server.jpg)
+
 Modul ini berfokus pada panduan langkah demi langkah dalam membangun, mengonfigurasi, dan mengelola server web untuk kebutuhan pengembangan maupun deployment aplikasi web.
 
 ## Daftar Panduan berdasarkan Distribusi
