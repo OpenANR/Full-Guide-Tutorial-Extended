@@ -2,9 +2,12 @@
 
 _by: Ahmad Nuzulur Rozaq + Gemini AI_
 
+![Penggunaan Chown dan Chmod di Linux](images/penggunaan_chmod_dan_chown.jpg)
+
 Di sistem operasi Linux (dan keluarga Unix lainnya), keamanan file dan direktori diatur dengan sangat ketat. Dua perintah penting untuk mengelola hak akses ini adalah `chown` dan `chmod`.
 
 Secara sederhana:
+
 - `chown` menentukan **SIAPA** yang memiliki file tersebut.
 - `chmod` menentukan **APA** yang bisa dilakukan oleh pemilik, grup dan orang lain terhadap file tersebut.
 
@@ -21,7 +24,7 @@ chown [user_baru]:[grup_baru] nama_file
 
 **Contoh Penggunaan**
 
-- **Mengubah pemilik file:** `chown nuzul keterangan.txt` (Membuat user 'nuzul' menjadi pemilik file keterangan.txt)
+- **Mengubah pemilik file**: `chown nuzul keterangan.txt` (Membuat user 'nuzul' menjadi pemilik file keterangan.txt)
 - **Mengubah pemilik dan grup sekaligus**: `chown nuzul:teknisi instalasi.txt` (Membuat user 'nuzul' dan grup 'teknisi' menjadi pemilik file instalasi.txt)
 - **Mengubah seluruh isi folder (Rekursif)**: `chown -R nuzul:teknisi /home/nuzulurrozaq/project` (Parameter `-R` atau rekursif akan mengubah kepemilikan folder `/home/nuzulurrozaq/project/` beserta seluruh file dan sub-folder di dalamnya).
 
@@ -35,27 +38,27 @@ Perintah `chmod` digunakan untuk mengubah hak akses (permission) dari file atau 
 2. **Group (g)**: Anggota grup yang memiliki file tersebut.
 3. **Other (o)**: Semua orang lain (publik).
 
-Terdapat 3 jenisn hak akses:
+Terdapat 3 jenis hak akses:
 
 - **Read (r)**: Hak untuk membaca isi file atau melihat daftar isi direktori.
 - **Write (w)**: Hak untuk memodifikasi/menghapus file atau membuat file baru di dalam direktori.
 - **Execute (x)**: Hak untuk menjalankan file sebagai program/script, atau hak untuk masuk (cd) ke dalam direktori.
 
-Ada dua cara untuk menggunakan `chamod` yaitu **Mode Angka (Oktal)** dan **Mode Huruf (Simbolik).**
+Ada dua cara untuk menggunakan `chmod` yaitu **Mode Angka (Oktal)** dan **Mode Huruf (Simbolik).**
 
 ### A. Mode Angka (Oktal)
 
 Ini adalah cara paling umum dan cepat. Setiap hak akses diwakili oleh angka:
 
 - **Read (r)** = 4
-- **Write (w)*** = 2
+- **Write (w)** = 2
 - **Execute (x)** = 1
 - Tidak ada akses = 0
 
 Anda tinggal menjumlahkan angka-angka ini untuk setiap kategori (User, Group, Others).
 
 **Contoh Kombinasi Angka**:
-_Read
+
 - 7 (4+2+1) = _Read, Write, Execute_
 - 6 (4+2) = _Read, Write_
 - 5 (4+1) = _Read, Execute_
@@ -64,22 +67,28 @@ _Read
 **Contoh Penggunaan `chmod` Angka**:
 
 - `chmod 755 script.sh`
-    - Angka 1(`7`): Pemilik bisa `rwx` (baca, tulis, eksekusi).
-    - Angka 2(`5`): Grup bisa `rx` (Baca, eksekusi).
-    - Angka 3(`5`): Orang lain bisa `rx` (baca, eksekusi).
+    - Digit pertama (`7`): Pemilik bisa `rwx` (baca, tulis, eksekusi).
+    - Digit kedua (`5`): Grup bisa `rx` (baca, eksekusi).
+    - Digit ketiga (`5`): Orang lain bisa `rx` (baca, eksekusi).
 
 - `chmod 644 catatan.txt`
-    - Pemilik bisa membaca dan menulis (6).. Grup dan orang lain hanya bisa membaca (4). Ini adalah hak akses standar untuk file teks.
+    - Digit pertama (`6`): Pemilik bisa `rw` (baca, tulis).
+    - Digit kedua (`4`): Grup hanya bisa `r` (baca).
+    - Digit ketiga (`4`): Orang lain hanya bisa `r` (baca).
+    - _Catatan: Ini adalah hak akses standar untuk file teks._
 
 - `chmod 777 /path/ke/folder/file`
-    - Semua orang bisa melakukan apa saja (baca, tulis, dan eksekusi). Sangat berbahaya dan jarang disarankan untuk file penting.
+    - Digit pertama (`7`): Pemilik bisa `rwx` (baca, tulis, eksekusi).
+    - Digit kedua (`7`): Grup bisa `rwx` (baca, tulis, eksekusi).
+    - Digit ketiga (`7`): Orang lain bisa `rwx` (baca, tulis, eksekusi).
+    - _Catatan: Sangat berbahaya dan jarang disarankan untuk file penting._
 
 ### B. Mode Huruf (Simbolik)
 
 Mode ini menggunakan huruf untuk menambah (`+`), mengurangi (`-`), atau menetapkan secara pasti (`=`) hak akses.
 
-- Kategori: `u` (user), `g`(group), `o`(others), `a` (all/semua).
-- Aksi: `+`(tambah), `-`(kurangi), `=`(set).
+- Kategori: `u` (user), `g` (group), `o` (others), `a` (all/semua).
+- Aksi: `+` (tambah), `-` (kurangi), `=` (set).
 - Akses: `r`, `w`, `x`
 
 **Contoh Penggunaan `chmod` Huruf**:

@@ -41,7 +41,7 @@ theme:
     - navigation.sections
     - navigation.indexes
   
-  # logo: logo/fgt_logo.svg
+  logo: logo/fgt_logo.svg
 
 extra:
   social:
@@ -50,6 +50,12 @@ extra:
 
       - icon: fontawesome/brands/instagram
         link: https://www.instagram.com/massnuzul_06
+
+      - icon: fontawesome/brands/tiktok
+        link: https://www.tiktok.com/@nuzulurrozaq_2006
+
+      - icon: fontawesome/brands/threads
+        link: https://www.threads.com/@massnuzul_06
 
       - icon: fontawesome/brands/github
         link: https://github.com/OpenANR
@@ -78,8 +84,8 @@ nav:
       - Perintah TAR: Linux/pengelola-arsip-file/perintah-tar.md
       - Perintah ZIP dan UNZIP: Linux/pengelola-arsip-file/perintah-zip-unzip.md
     - Mengelola Perizinan Folder:
-      - Pengenalan: Linux/mengelola-perizinanan-folder/index.md
-      - Pengguaan Chmod dan Chown: Linux/mengelola-perizinanan-folder/penggunaan-chown-dan-chmod.md
+      - Pengenalan: Linux/mengelola-perizinan-folder/index.md
+      - Penggunaan Chmod dan Chown: Linux/mengelola-perizinan-folder/penggunaan-chown-dan-chmod.md
     - Konfigurasi Web Server:
       - Pengantar: Linux/konfigurasi-web-server/index.md
       - Arch Linux:
